@@ -1,13 +1,21 @@
-import { useState } from 'react'
+import Banner from "./components/Banner";
+import Container from "./components/Container";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <h1>Hello world!</h1>
-      <p>Olá mundo! Estou aprendendo React JS!</p>
-      <a>link</a>
+      <Header />
+      <Banner image="home" />
+
+      <Container>
+        <h1>Hello world!</h1>
+        <p>Olá mundo! Estou aprendendo React JS!</p>
+      </Container>
+
+      <Footer />
     </>
   );
 }
