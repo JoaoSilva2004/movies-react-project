@@ -10,13 +10,13 @@ function App() {
   return (
     <>
       <Header />
-      <Banner image="home" />
+      <Banner image="favoritos" />
 
       <Container>
-        <h2>Animes</h2>
+        <h2>Geografia</h2>
         <section className="cards">
 
-          { videos.map( (video) => <Card id={video.id} key={videos.id} /> ) }
+          { videos.map( (video) => <Card id={video.id} key={video.id} /> ) }
 
           {/* <Card id="MMKr4T1picE" />
           <Card id="8ahHh1rVc2w" />
