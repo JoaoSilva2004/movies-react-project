@@ -4,8 +4,16 @@ import Category, { categories, filterCategory } from "../../components/Category"
 import Container from "../../components/Container";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
+import { useState } from "react";
 
 function Home() {
+  
+  function getName(event) {
+    setName(event.target.value);
+  }
+
+  // Hook - Gancho -> useState
+  const [ name, setName ] = useState();
 
   return (
     <>
@@ -13,12 +21,20 @@ function Home() {
       <Banner image="favoritos" />
 
       <Container>
+        <input
+          type="text"
+          placeholder="Nome"
 
-        {categories.map( (category, index) =>
+          onChange={ getName }
+        />
+
+        <h2>"{ name }"</h2>
+        
+        {/* {categories.map( (category, index) =>
           <Category category={ category } key={ index }>
             { filterCategory(index).map( (video) => <Card id={video.id} key={video.id} /> )}
           </Category>
-        )}
+        )} */}
 
       </Container>
 
