@@ -1,8 +1,8 @@
 .container {
     width: 100%;
-    min-height: 100vh;
+    height: 100%;
     background-color: #191919;
     color: #ffffff;
-    padding-block: 1rem;
+    padding-block: 1.35rem;
     text-align: center;
 }
