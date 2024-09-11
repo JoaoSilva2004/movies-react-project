@@ -15,7 +15,7 @@ function Home() {
       <Container>
 
         {categories.map( (category, index) =>
-          <Category category={ category }>
+          <Category category={ category } key={ index }>
             { filterCategory(index).map( (video) => <Card id={video.id} key={video.id} /> )}
           </Category>
         )}
