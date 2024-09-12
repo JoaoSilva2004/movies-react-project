@@ -8,6 +8,7 @@ header {
     top: 0;
     background-color: #000000dd;
     border-bottom: 2px solid #f44336;
+    z-index: 1000;
 }
 
 header span {
